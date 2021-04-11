@@ -1,0 +1,52 @@
+/* css for registration form and errors*/
+/* Variables */
+#register {
+  padding-top: 100px;
+}
+#register h2 {
+  text-align: center;
+}
+
+.form-registration {
+  max-width: 330px;
+  padding: 15px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+}
+.form-registration label {
+  margin-top: 15px;
+}
+.form-registration input {
+  width: 100%;
+  height: 25px;
+  margin: 0px 0 10px;
+}
+.form-registration .btn {
+  flex: 1 0 100%;
+  margin-top: 20px;
+  height: 35px;
+  border: none;
+  background-color: #daaa0e;
+  color: white;
+  font-weight: bold;
+}
+
+#register {
+  margin: 0 auto;
+  padding: 0;
+  list-style: none;
+  color: #333333;
+  font-size: 1.2em;
+  display: table;
+}
+#register li {
+  text-align: center;
+}
+#register li:before {
+  content: "! Error : ";
+  color: red;
+  font-weight: bold;
+}
+
+/*# sourceMappingURL=registration.css.map */

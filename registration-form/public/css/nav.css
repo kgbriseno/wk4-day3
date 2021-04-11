@@ -1,0 +1,35 @@
+/* Nesting */
+/* Variables */
+.navstyle, nav.cta, nav.mainnav {
+  font-size: 1em;
+  font-weight: bold;
+  width: 20%;
+}
+.navstyle ul, nav.cta ul, nav.mainnav ul {
+  list-style-type: none;
+}
+.navstyle ul li, nav.cta ul li, nav.mainnav ul li {
+  float: left;
+  margin: 0 5px 0 0;
+  color: white;
+}
+.navstyle ul li a, nav.cta ul li a, nav.mainnav ul li a {
+  text-decoration: none;
+  color: white;
+}
+.navstyle ul li a:hover, nav.cta ul li a:hover, nav.mainnav ul li a:hover {
+  text-decoration: underline;
+}
+
+nav.mainnav {
+  float: left;
+}
+
+nav.cta {
+  float: right;
+}
+nav.cta ul li {
+  float: right;
+}
+
+/*# sourceMappingURL=nav.css.map */

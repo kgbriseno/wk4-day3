@@ -1,0 +1,45 @@
+/* Nesting */
+@import "variables.scss";
+@import "colors.scss";
+
+// @extend 
+.navstyle {
+    font: {
+        size: $fontSize2;
+        weight: bold;
+    }
+    width: 20%;
+    ul {
+        list-style-type: none;
+        li {
+            float: left;
+            margin: 0 5px 0 0;
+            color: $color4;
+            a {
+                text-decoration: none;
+                &:hover {
+                    text-decoration: underline;
+               }
+               color: $color4;
+           }
+       }
+   }
+}
+
+
+nav.mainnav {
+    @extend .navstyle;
+    float: left;
+    
+}
+
+nav.cta {
+    @extend .navstyle;
+    float:right;
+
+    ul {
+        li {
+            float:right;
+        }
+    }
+} 

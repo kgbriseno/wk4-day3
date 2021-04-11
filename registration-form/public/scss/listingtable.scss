@@ -1,0 +1,26 @@
+/* Styles for listing table */
+@import "colors.scss";
+
+.listing-table {
+	width: 70%;
+	background-color: $color4;
+	margin: 50px auto;
+	th {
+		padding: 10px;
+		border-bottom: 1px solid $color5;
+		text-align: center;
+		background: $backgroundColor3;
+		color: $color4;
+		&:first-child {
+			border-right: 1px solid $color5;
+		}
+	}
+	td {
+		padding: 10px;
+		border-bottom: 1px solid $color5;
+		text-align: center;
+		&:first-child {
+			border-right: 1px solid $color5;
+		}
+	}
+}

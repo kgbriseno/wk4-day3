@@ -1,0 +1,69 @@
+extends layout
+
+block content
+    header
+        nav.mainnav
+            ul
+                li
+                    a(href='/') Home
+                li  
+                    ||
+                li
+                    a(href='#') Blog
+        nav.cta
+            ul
+                li
+                    a(href='#') Register
+    main
+        section#intro-text
+            span Simple Kitchen
+            h3
+            | Simple &amp; Comforting 
+            br
+            | Recipes All Year Round
+        section#register
+            -data = data || {}
+            if errors
+                ul
+                for error in errors
+                    li= error.msg
+            h2 Register to subscribe
+            form(action="." method="POST" class="form-registration")
+                label(for="name") Name:
+                input(
+                    type="text"
+                    id="name"
+                    name="name"
+                    value=data.name
+                )
+
+                label(for="email") Email:
+                input(
+                    type="email"
+                    id="email"
+                    name="email"
+                    value=data.email
+                )
+
+                label(for="username") Username:
+                input(
+                    type="text"
+                    id="username"
+                    name="username"
+                    value=data.username
+                )
+
+                label(for="password") Password:
+                input(
+                    type="text"
+                    id="password"
+                    name="password"
+                    value=data.email
+                )
+
+                input.btn(
+                    type="submit" 
+                    value="Register"
+                )
+    footer
+        | &copy; Copyright 2021

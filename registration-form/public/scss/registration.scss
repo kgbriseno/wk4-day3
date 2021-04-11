@@ -1,0 +1,51 @@
+/* css for registration form and errors*/
+@import "variables.scss";
+@import "colors.scss";
+
+#register {
+	padding-top: 100px;
+	h2 {
+		text-align: center;
+	}
+}
+.form-registration {
+	max-width: 330px;
+	padding: 15px;
+	margin: 0 auto;
+	display: flex;
+	flex-wrap: wrap;
+	label {
+		margin-top: 15px;
+	}
+	input {
+		width: 100%;
+		height: 25px;
+		margin: 0px 0 10px;
+	}
+	.btn {
+		flex: 1 0 100%;
+		margin-top: 20px;
+		height: 35px;
+		border: none;
+		background-color: $backgroundColor1;
+		color: $color4;
+		font-weight: bold;
+	}
+}
+#register {
+	margin: 0 auto;
+	padding: 0;
+	list-style: none;
+	color: $color6;
+	font-size: $fontSize1;
+	display: table;
+	li {
+		//margin: 0 0 0.5em;
+		text-align:center;
+		&:before {
+			content: "! Error : ";
+			color: $color7;
+			font-weight: bold;
+		}
+	}
+}
